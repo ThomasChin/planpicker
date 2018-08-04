@@ -49,7 +49,7 @@ SECRET_KEY = find_or_create_secret_key()
 # DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = ['limitless-beach-59353.herokuapp.com/']
+ALLOWED_HOSTS = ['limitless-beach-59353.herokuapp.com']
 
 
 # Application definition
