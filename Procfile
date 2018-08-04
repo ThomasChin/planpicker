@@ -1,0 +1,1 @@
+web: gunicorn planpicker.wsgi --log-file -
