@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Name: {{ location.name }}</h1>
+
+    <ul>
+
+      {% for plan in location.plan_set.all %}
+      <li>
+        <a href="{{ plan.get_absolute_url }}">{{ plan.title }}</a>
+      </li>
+      {% endfor %}
+
+</ul>
+{% endblock %}

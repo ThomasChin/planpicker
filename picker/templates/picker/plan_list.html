@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>All Plans</h1>
+
+    {% if plan_list %}
+    <ul>
+
+      {% for plan in plan_list %}
+      <li>
+        <a href="{{ plan.get_absolute_url }}">{{ plan.title }}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no plans in the database.</p>
+    {% endif %}       
+{% endblock %}

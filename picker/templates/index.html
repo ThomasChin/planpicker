@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Plan Picker Home</h1>
+<p>Welcome to <em>PlanPicker</em>, a very basic Django web app developed
+to help you pick your plans when the burden of too many options becomes too much</p>
+
+<h3>Plan Picker has the following record counts: </h3>
+
+    <ul>
+        <li><strong>Plans:</strong> {{ num_plans }}</li>
+        <li><strong>Locations:</strong> {{ num_locs }}</li>
+    </ul>
+
+{% endblock%}
