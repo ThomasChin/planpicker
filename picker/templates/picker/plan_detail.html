@@ -5,6 +5,7 @@
     <h1>Title: {{ plan.title }}</h1>
     <p><strong>Description:</strong> {{ plan.description }}</p>
     <p><strong>Price Point:</strong> {{ plan.price_point }}</p>
-    <p><strong>Location:</strong> {{ plan.location }}</p>
+    <strong>Location:</strong>
+    <a href="{{ plan.location.get_absolute_url }}"> {{ plan.location }}</a>
 
 {% endblock %}
